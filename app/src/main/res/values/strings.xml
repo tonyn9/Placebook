@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PlaceBook</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_new_place">New Place</string>
+    <string name="action_edit_place">Edit Place</string>
+    <string name="action_view_all">View All Places</string>
+    <string name="action_delete_place">Delete Place</string>
+    <string name="action_settings">Settings</string>
+    <string name="place_desc_message">Enter Place Description</string>
+    <string name="pick_or_enter_place">Pick or Enter Place</string>
+    <string name="button_snapshot">Snapshot</string>
+    <string name="place_picker">Pick A Place</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! This device doesn\'t support speech input</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_display_photo">DisplayPhotoActivity</string>
+    <string name="Longitude">Longitude</string>
+    <string name="Place">Place</string>
+    <string name="Latitude">Latitude</string>
+    <string name="Altitude">Altitude</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="Search">Search</string>
+
+
+</resources>

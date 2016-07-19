@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/wallpaper_pyramids1"
+                android:scaleType="center"
+                tools:context=".MainActivity">
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridlayout_top"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnCount="2"
+        android:rowCount="1" >
+        <TextView
+            android:id="@+id/txtPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/Place" />
+
+        <EditText
+            android:id="@+id/txtPlaceContent"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:hint="@string/pick_or_enter_place"
+            android:gravity="top"
+            android:background="#6600A090"
+            android:padding="1dp"/>
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/button_snapshot"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gridlayout_top"
+        android:src="@drawable/ic_menu_camera"
+        android:text="@string/button_snapshot" />
+    <ImageButton
+        android:id="@+id/button_speak"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/button_snapshot"
+        android:layout_below="@id/gridlayout_top"
+        android:src="@drawable/ic_btn_speak_now" />
+    <ImageButton
+        android:id="@+id/button_location"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/button_snapshot"
+        android:layout_below="@id/gridlayout_top"
+        android:src="@drawable/perm_group_location" />
+    <ImageButton
+        android:id="@+id/button_place_picker"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_snapshot"
+        android:text="@string/place_picker"
+        android:src="@drawable/ic_menu_mapmode" />
+    <ScrollView
+        android:id="@+id/edit_place_desc_scroller"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_place_picker"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/edit_place_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/place_desc_message"
+            android:gravity="top"
+            android:maxLines="7"
+            android:background="#6600A090"
+            android:padding="1dp"/>
+    </ScrollView>
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_place_desc_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:id="@+id/gridLayout">
+        <TextView
+            android:id="@+id/txtGpsLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/Longitude" />
+
+        <TextView
+            android:id="@+id/txtGpsLongitudeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtGpsLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/Latitude" />
+
+        <TextView
+            android:id="@+id/txtGpsLatitudeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtGpsAltitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/Altitude"  />
+
+        <TextView
+            android:id="@+id/txtGpsAltitudeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </GridLayout>
+    <ImageButton
+        android:id="@+id/button_powered_by_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="255"
+        android:src="@drawable/powered_by_google_light"
+        android:layout_below="@+id/gridLayout" />
+
+</RelativeLayout>
